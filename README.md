@@ -23,7 +23,7 @@ All wrapped in a clean and intuitive interface, generated with the help of AI de
 ![Set Alarm](images/set-alarm.png)
 ![World Clock View](images/world-clock.png)
 
-> _(Upload your screenshots to the `images/` folder in your repo and update the file names above to match)_
+>
 
 ---
 
