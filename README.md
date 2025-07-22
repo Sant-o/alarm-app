@@ -20,7 +20,7 @@ All wrapped in a clean and intuitive interface, generated with the help of AI de
 > Showcasing the sleek and functional UI of the app:
 
 ![Home Screen]([images/home-ui.png](https://github.com/Sant-o/alarm-app/blob/main/images))
-![Set Alarm](images/set-alarm.png)
+![Set Alarm](set-alarm.png)
 ![World Clock View](images/world-clock.png)
 
 >
