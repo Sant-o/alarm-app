@@ -1,135 +1,340 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
-
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-white justify-between group/design-root overflow-x-hidden"
-      style='font-family: "Public Sans", "Noto Sans", sans-serif;'
-    >
-      <div>
-        <div class="flex items-center bg-white p-4 pb-2 justify-between">
-          <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Clock</h2>
-          <div class="flex w-12 items-center justify-end">
-            <button
-              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-[#121416] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
-            >
-              <div class="text-[#121416]" data-icon="Clock" data-size="24px" data-weight="regular">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                  <path
-                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"
-                  ></path>
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
-        <div class="pb-3">
-          <div class="flex border-b border-[#dde0e3] px-4 gap-8">
-            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#6a7581] pb-[13px] pt-4" href="#">
-              <p class="text-[#6a7581] text-sm font-bold leading-normal tracking-[0.015em]">Alarm</p>
-            </a>
-            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#121416] text-[#121416] pb-[13px] pt-4" href="#">
-              <p class="text-[#121416] text-sm font-bold leading-normal tracking-[0.015em]">Clock</p>
-            </a>
-            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#6a7581] pb-[13px] pt-4" href="#">
-              <p class="text-[#6a7581] text-sm font-bold leading-normal tracking-[0.015em]">Timer</p>
-            </a>
-            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#6a7581] pb-[13px] pt-4" href="#">
-              <p class="text-[#6a7581] text-sm font-bold leading-normal tracking-[0.015em]">Stopwatch</p>
-            </a>
-          </div>
-        </div>
-        <div class="flex px-4 py-1">
-          <div class="group flex-1">
-            <p
-              class="text-[#bec4ca] text-sm font-bold leading-normal tracking-[0.015em] flex h-11 items-center justify-center truncate px-4 text-center group-[:first-child]:rounded-l-full group-[:last-child]:rounded-r-full"
-            >
-              San Francisco
-            </p>
-            <p
-              class="text-[#121416] text-sm font-bold leading-normal tracking-[0.015em] flex h-11 items-center justify-center truncate px-4 text-center group-[:first-child]:rounded-l-full group-[:last-child]:rounded-r-full bg-[#f1f2f4]"
-            >
-              New York
-            </p>
-            <p
-              class="text-[#bec4ca] text-sm font-bold leading-normal tracking-[0.015em] flex h-11 items-center justify-center truncate px-4 text-center group-[:first-child]:rounded-l-full group-[:last-child]:rounded-r-full"
-            >
-              London
-            </p>
-          </div>
-        </div>
-        <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
-          <div class="flex flex-col justify-center">
-            <p class="text-[#121416] text-base font-medium leading-normal line-clamp-1">10:17 AM</p>
-            <p class="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2">Pacific Time</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
-          <div class="flex flex-col justify-center">
-            <p class="text-[#121416] text-base font-medium leading-normal line-clamp-1">6:17 PM</p>
-            <p class="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2">London</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
-          <div class="flex flex-col justify-center">
-            <p class="text-[#121416] text-base font-medium leading-normal line-clamp-1">2:17 AM</p>
-            <p class="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2">Tokyo</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="flex gap-2 border-t border-[#f1f2f4] bg-white px-4 pb-3 pt-2">
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#121416]" href="#">
-            <div class="text-[#121416] flex h-8 items-center justify-center" data-icon="Alarm" data-size="24px" data-weight="fill">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M61.66,29.66l-32,32A8,8,0,0,1,18.34,50.34l32-32A8,8,0,1,1,61.66,29.66Zm176,20.68-32-32a8,8,0,0,0-11.32,11.32l32,32a8,8,0,0,0,11.32-11.32ZM224,128a96,96,0,1,1-96-96A96.11,96.11,0,0,1,224,128Zm-32,0a8,8,0,0,0-8-8H136V72a8,8,0,0,0-16,0v56a8,8,0,0,0,8,8h56A8,8,0,0,0,192,128Z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#6a7581]" href="#">
-            <div class="text-[#6a7581] flex h-8 items-center justify-center" data-icon="GlobeHemisphereWest" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm88,104a87.62,87.62,0,0,1-6.4,32.94l-44.7-27.49a15.92,15.92,0,0,0-6.24-2.23l-22.82-3.08a16.11,16.11,0,0,0-16,7.86h-8.72l-3.8-7.86a15.91,15.91,0,0,0-11-8.67l-8-1.73L96.14,104h16.71a16.06,16.06,0,0,0,7.73-2l12.25-6.76a16.62,16.62,0,0,0,3-2.14l26.91-24.34A15.93,15.93,0,0,0,166,49.1l-.36-.65A88.11,88.11,0,0,1,216,128ZM143.31,41.34,152,56.9,125.09,81.24,112.85,88H96.14a16,16,0,0,0-13.88,8l-8.73,15.23L63.38,84.19,74.32,58.32a87.87,87.87,0,0,1,69-17ZM40,128a87.53,87.53,0,0,1,8.54-37.8l11.34,30.27a16,16,0,0,0,11.62,10l21.43,4.61L96.74,143a16.09,16.09,0,0,0,14.4,9h1.48l-7.23,16.23a16,16,0,0,0,2.86,17.37l.14.14L128,205.94l-1.94,10A88.11,88.11,0,0,1,40,128Zm102.58,86.78,1.13-5.81a16.09,16.09,0,0,0-4-13.9,1.85,1.85,0,0,1-.14-.14L120,174.74,133.7,144l22.82,3.08,45.72,28.12A88.18,88.18,0,0,1,142.58,214.78Z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#6a7581]" href="#">
-            <div class="text-[#6a7581] flex h-8 items-center justify-center" data-icon="Timer" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M128,40a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,40Zm0,176a80,80,0,1,1,80-80A80.09,80.09,0,0,1,128,216ZM173.66,90.34a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32l40-40A8,8,0,0,1,173.66,90.34ZM96,16a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,16Z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#6a7581]" href="#">
-            <div class="text-[#6a7581] flex h-8 items-center justify-center" data-icon="Timer" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M128,40a96,96,0,1,0,96,96A96.11,96.11,0,0,0,128,40Zm0,176a80,80,0,1,1,80-80A80.09,80.09,0,0,1,128,216ZM173.66,90.34a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32-11.32l40-40A8,8,0,0,1,173.66,90.34ZM96,16a8,8,0,0,1,8-8h48a8,8,0,0,1,0,16H104A8,8,0,0,1,96,16Z"
-                ></path>
-              </svg>
-            </div>
-          </a>
-        </div>
-        <div class="h-5 bg-white"></div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Alarm App Enhanced</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans:wght@400;500;700;900&amp;family=Public+Sans:wght@400;500;700;900"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .tab-link.active { border-bottom-color: #121416 !important; color: #121416 !important; }
+    .input-time::-webkit-inner-spin-button, .input-time::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  </style>
+</head>
+<body>
+<div class="relative flex size-full min-h-screen flex-col bg-white justify-between group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
+  <div>
+    <div class="flex items-center bg-white p-4 pb-2 justify-between">
+      <h2 class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">Clock & Alarms</h2>
+    </div>
+    <div class="pb-3">
+      <div class="flex border-b border-[#dde0e3] px-4 gap-8">
+        <button class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#6a7581] pb-[13px] pt-4" data-tab="alarm"><p class="text-sm font-bold">Alarm</p></button>
+        <button class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-[#121416] text-[#121416] pb-[13px] pt-4 active" data-tab="clock"><p class="text-sm font-bold">Clock</p></button>
+        <button class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#6a7581] pb-[13px] pt-4" data-tab="timer"><p class="text-sm font-bold">Timer</p></button>
+        <button class="tab-link flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#6a7581] pb-[13px] pt-4" data-tab="stopwatch"><p class="text-sm font-bold">Stopwatch</p></button>
       </div>
     </div>
-  </body>
+
+    <!-- CLOCK TAB -->
+    <div class="tab-content active" id="tab-clock">
+      <div class="flex gap-2 p-4">
+        <div>
+          <label for="world-clock-city1" class="block text-xs mb-1">World Clock 1</label>
+          <select id="world-clock-city1" class="border rounded p-1">
+            <option value="local">Your Location</option>
+            <option value="America/Los_Angeles">San Francisco</option>
+            <option value="America/New_York">New York</option>
+            <option value="Europe/London">London</option>
+            <option value="Europe/Berlin">Berlin</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Asia/Kolkata">India</option>
+            <option value="Australia/Sydney">Sydney</option>
+          </select>
+          <div class="mt-2">
+            <span id="clock-time-1" class="text-2xl font-bold">--:--:--</span>
+            <div id="clock-city-1" class="text-xs text-gray-600">--</div>
+          </div>
+        </div>
+        <div>
+          <label for="world-clock-city2" class="block text-xs mb-1">World Clock 2</label>
+          <select id="world-clock-city2" class="border rounded p-1">
+            <option value="local">Your Location</option>
+            <option value="America/Los_Angeles">San Francisco</option>
+            <option value="America/New_York">New York</option>
+            <option value="Europe/London">London</option>
+            <option value="Europe/Berlin">Berlin</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Asia/Kolkata">India</option>
+            <option value="Australia/Sydney">Sydney</option>
+          </select>
+          <div class="mt-2">
+            <span id="clock-time-2" class="text-2xl font-bold">--:--:--</span>
+            <div id="clock-city-2" class="text-xs text-gray-600">--</div>
+          </div>
+        </div>
+        <div>
+          <label for="world-clock-city3" class="block text-xs mb-1">World Clock 3</label>
+          <select id="world-clock-city3" class="border rounded p-1">
+            <option value="local">Your Location</option>
+            <option value="America/Los_Angeles">San Francisco</option>
+            <option value="America/New_York">New York</option>
+            <option value="Europe/London">London</option>
+            <option value="Europe/Berlin">Berlin</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Asia/Kolkata">India</option>
+            <option value="Australia/Sydney">Sydney</option>
+          </select>
+          <div class="mt-2">
+            <span id="clock-time-3" class="text-2xl font-bold">--:--:--</span>
+            <div id="clock-city-3" class="text-xs text-gray-600">--</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMER TAB -->
+    <div class="tab-content" id="tab-timer">
+      <div class="px-4 py-8 flex flex-col items-center">
+        <div class="text-4xl font-bold mb-2" id="timer-display">00:00</div>
+        <div class="flex gap-2 mb-2">
+          <button id="timer-start" class="px-4 py-2 bg-green-500 text-white rounded-full">Start</button>
+          <button id="timer-stop" class="px-4 py-2 bg-red-500 text-white rounded-full">Stop</button>
+          <button id="timer-reset" class="px-4 py-2 bg-gray-300 text-black rounded-full">Reset</button>
+        </div>
+        <input id="timer-minutes" type="number" min="0" max="99" placeholder="Minutes" class="border p-1 rounded w-20 mr-2">
+        <input id="timer-seconds" type="number" min="0" max="59" placeholder="Seconds" class="border p-1 rounded w-20">
+      </div>
+    </div>
+
+    <!-- STOPWATCH TAB -->
+    <div class="tab-content" id="tab-stopwatch">
+      <div class="px-4 py-8 flex flex-col items-center">
+        <div class="text-4xl font-bold mb-2" id="stopwatch-display">00:00:00:000</div>
+        <div class="flex gap-2 mb-2">
+          <button id="stopwatch-start" class="px-4 py-2 bg-green-500 text-white rounded-full">Start</button>
+          <button id="stopwatch-stop" class="px-4 py-2 bg-red-500 text-white rounded-full">Stop</button>
+          <button id="stopwatch-reset" class="px-4 py-2 bg-gray-300 text-black rounded-full">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALARM TAB -->
+    <div class="tab-content" id="tab-alarm">
+      <div class="px-4 py-8 flex flex-col items-center">
+        <div class="mb-4">
+          <label class="block mb-1 text-sm">Set Alarm (24h format)</label>
+          <input id="alarm-hour" type="number" min="0" max="23" placeholder="HH" class="input-time w-16 border p-1 rounded mr-2">
+          <input id="alarm-minute" type="number" min="0" max="59" placeholder="MM" class="input-time w-16 border p-1 rounded mr-2">
+          <button id="alarm-set" class="bg-blue-500 text-white px-4 py-2 rounded-full">Set Alarm</button>
+        </div>
+        <div id="alarm-status" class="text-gray-700 text-lg mb-3">No alarm set.</div>
+        <button id="alarm-cancel" class="bg-gray-300 text-black px-4 py-2 rounded-full hidden">Cancel Alarm</button>
+      </div>
+    </div>
+
+  </div>
+  <div>
+    <div class="flex gap-2 border-t border-[#f1f2f4] bg-white px-4 pb-3 pt-2">
+      <button class="tab-link flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#121416]" data-tab="alarm"><div class="text-[#121416] flex h-8 items-center justify-center">⏰</div></button>
+      <button class="tab-link flex flex-1 flex-col items-center justify-end gap-1 text-[#6a7581]" data-tab="clock"><div class="text-[#6a7581] flex h-8 items-center justify-center">🕑</div></button>
+      <button class="tab-link flex flex-1 flex-col items-center justify-end gap-1 text-[#6a7581]" data-tab="timer"><div class="text-[#6a7581] flex h-8 items-center justify-center">⏲️</div></button>
+      <button class="tab-link flex flex-1 flex-col items-center justify-end gap-1 text-[#6a7581]" data-tab="stopwatch"><div class="text-[#6a7581] flex h-8 items-center justify-center">⏱️</div></button>
+    </div>
+    <div class="h-5 bg-white"></div>
+  </div>
+</div>
+<script>
+  // Tab logic
+  document.querySelectorAll('.tab-link').forEach(btn=>{
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('.tab-link').forEach(b=>b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tab=>tab.classList.remove('active'));
+      this.classList.add('active');
+      document.getElementById('tab-'+this.getAttribute('data-tab')).classList.add('active');
+    });
+  });
+
+  // World clock logic
+  const citySelects = [
+    { select:'world-clock-city1', clock:'clock-time-1', label:'clock-city-1' },
+    { select:'world-clock-city2', clock:'clock-time-2', label:'clock-city-2' },
+    { select:'world-clock-city3', clock:'clock-time-3', label:'clock-city-3' }
+  ];
+  function updateWorldClocks() {
+    citySelects.forEach(({select,clock,label})=>{
+      let tz = document.getElementById(select).value;
+      let now = new Date();
+      let timeStr, zoneLabel;
+      if (tz === "local") {
+        timeStr = now.toLocaleTimeString([], { hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false });
+        zoneLabel = "Your Location";
+      } else {
+        try {
+          timeStr = now.toLocaleTimeString([], { hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false, timeZone:tz });
+        } catch(e) {
+          timeStr = "--:--:--";
+        }
+        zoneLabel = document.getElementById(select).selectedOptions[0].textContent;
+      }
+      document.getElementById(clock).textContent = timeStr;
+      document.getElementById(label).textContent = zoneLabel;
+    });
+  }
+  citySelects.forEach(({select})=>{
+    document.getElementById(select).addEventListener('change',updateWorldClocks);
+  });
+  setInterval(updateWorldClocks, 500);
+  updateWorldClocks();
+
+  // TIMER LOGIC
+  let timerInterval = null, timerTime = 0;
+  function updateTimerDisplay() {
+    const min = Math.floor(timerTime / 60);
+    const sec = timerTime % 60;
+    document.getElementById('timer-display').textContent = `${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+  }
+  document.getElementById('timer-start').onclick = function() {
+    if (timerInterval) return;
+    let mins = parseInt(document.getElementById('timer-minutes').value,10)||0;
+    let secs = parseInt(document.getElementById('timer-seconds').value,10)||0;
+    if (timerTime === 0) timerTime = mins*60 + secs;
+    if (timerTime <= 0) return;
+    timerInterval = setInterval(() => {
+      if (timerTime > 0) {
+        timerTime--;
+        updateTimerDisplay();
+        if (timerTime === 0) {
+          clearInterval(timerInterval);
+          timerInterval = null;
+          alert('Timer finished!');
+        }
+      }
+    }, 1000);
+  };
+  document.getElementById('timer-stop').onclick = function() {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  };
+  document.getElementById('timer-reset').onclick = function() {
+    clearInterval(timerInterval);
+    timerInterval = null;
+    timerTime = 0;
+    updateTimerDisplay();
+    document.getElementById('timer-minutes').value = '';
+    document.getElementById('timer-seconds').value = '';
+  };
+  updateTimerDisplay();
+
+  // STOPWATCH LOGIC with milliseconds
+  let stopwatchInterval = null, stopwatchStart = null, stopwatchElapsed = 0, running = false;
+  function updateStopwatchDisplay() {
+    let elapsed = stopwatchElapsed;
+    if (running && stopwatchStart) {
+      elapsed += Date.now() - stopwatchStart;
+    }
+    let hours = Math.floor(elapsed/3600000);
+    let minutes = Math.floor((elapsed%3600000)/60000);
+    let seconds = Math.floor((elapsed%60000)/1000);
+    let millis = elapsed%1000;
+    document.getElementById('stopwatch-display').textContent =
+      `${hours.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}:${millis.toString().padStart(3,'0')}`;
+  }
+  document.getElementById('stopwatch-start').onclick = function() {
+    if (running) return;
+    running = true;
+    stopwatchStart = Date.now();
+    stopwatchInterval = setInterval(updateStopwatchDisplay, 10);
+  };
+  document.getElementById('stopwatch-stop').onclick = function() {
+    if (!running) return;
+    running = false;
+    stopwatchElapsed += Date.now() - stopwatchStart;
+    stopwatchStart = null;
+    clearInterval(stopwatchInterval);
+    updateStopwatchDisplay();
+  };
+  document.getElementById('stopwatch-reset').onclick = function() {
+    running = false;
+    clearInterval(stopwatchInterval);
+    stopwatchElapsed = 0;
+    stopwatchStart = null;
+    updateStopwatchDisplay();
+  };
+  updateStopwatchDisplay();
+
+  // ALARM LOGIC
+  let alarmTime = null, alarmTimeout = null, alarmActive = false;
+  function checkAlarm() {
+    if (!alarmActive || !alarmTime) return;
+    let now = new Date();
+    if (now.getHours() === alarmTime.hours && now.getMinutes() === alarmTime.minutes && now.getSeconds() === 0) {
+      alarmActive = false;
+      document.getElementById('alarm-status').textContent = "Alarm ringing!";
+      document.getElementById('alarm-cancel').classList.add('hidden');
+      alert("⏰ Alarm! It's time!");
+    }
+  }
+  document.getElementById('alarm-set').onclick = function() {
+    let hh = parseInt(document.getElementById('alarm-hour').value,10);
+    let mm = parseInt(document.getElementById('alarm-minute').value,10);
+    if (isNaN(hh) || isNaN(mm) || hh<0 || hh>23 || mm<0 || mm>59) {
+      document.getElementById('alarm-status').textContent = "Please enter a valid time.";
+      return;
+    }
+    alarmTime = { hours:hh, minutes:mm };
+    alarmActive = true;
+    document.getElementById('alarm-status').textContent =
+      `Alarm set for ${hh.toString().padStart(2,'0')}:${mm.toString().padStart(2,'0')}`;
+    document.getElementById('alarm-cancel').classList.remove('hidden');
+  };
+  document.getElementById('alarm-cancel').onclick = function() {
+    alarmTime = null;
+    alarmActive = false;
+    document.getElementById('alarm-status').textContent = "No alarm set.";
+    document.getElementById('alarm-cancel').classList.add('hidden');
+  };
+  setInterval(checkAlarm, 1000);
+</script>
+</body>
 </html>
+<!-- NEW FEATURE: World Clock Dropdown (ADD THIS) -->
+<div style="background: #d1e7fd; padding: 1em; border-radius: 8px; margin-bottom: 1em;">
+    <label><b>Select Country/City:</b></label>
+    <select id="world-clock-country" style="background:#b7ecb7;">
+      <option value="America/Los_Angeles">San Francisco (USA)</option>
+      <option value="America/New_York">New York (USA)</option>
+      <option value="Europe/London">London</option>
+      <option value="Europe/Berlin">Berlin</option>
+      <option value="Asia/Tokyo">Tokyo</option>
+      <option value="Asia/Kolkata">India</option>
+      <option value="Australia/Sydney">Sydney</option>
+    </select>
+    <div style="margin-top: 0.5em;">
+      <span style="color: #01579b;" id="world-clock-time">--:--:--</span>
+      <span style="color: #388e3c;" id="world-clock-label"></span>
+    </div>
+  </div>
+ NEW FEATURE: World Clock Dropdown 12-hour format with AM/PM (REPLACE PREVIOUS WORLD CLOCK DROPDOWN CODE)
+const countryLabelMap = {
+  "America/Los_Angeles": "San Francisco (USA)",
+  "America/New_York": "New York (USA)",
+  "Europe/London": "London",
+  "Europe/Berlin": "Berlin",
+  "Asia/Tokyo": "Tokyo",
+  "Asia/Kolkata": "India",
+  "Australia/Sydney": "Sydney"
+};
+
+function updateWorldClockDropdown() {
+  const tz = document.getElementById('world-clock-country').value;
+  const now = new Date();
+  let timeStr = "--:--:-- --";
+  try {
+    // CHANGED TO 12hr and adds am/pm
+    timeStr = now.toLocaleTimeString([], { 
+      hour:'2-digit', 
+      minute:'2-digit', 
+      second:'2-digit', 
+      hour12:true, 
+      timeZone: tz 
+    });
+  } catch(e) {}
+  document.getElementById('world-clock-time').textContent = timeStr;
+  document.getElementById('world-clock-label').textContent = " " + (countryLabelMap[tz] || "");
+}
+document.getElementById('world-clock-country').addEventListener('change', updateWorldClockDropdown);
+setInterval(updateWorldClockDropdown, 1000);
+updateWorldClockDropdown();
