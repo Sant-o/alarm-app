@@ -22,7 +22,7 @@ All wrapped in a clean and intuitive interface, generated with the help of AI de
 ![Home Screen]([images/home-ui.png](https://github.com/Sant-o/alarm-app/blob/main/images))
 ![Set Alarm](set-alarm.png)
 ![World Clock View](images/world-clock.png)
-
+![stopwatch](stop-watch.png)
 >
 
 ---
